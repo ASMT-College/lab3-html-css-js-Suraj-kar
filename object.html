@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Objects and Methods</title>
+	
+</head>
+<body>
+    <script>
+		// String object
+        document.write("String object"+"<br/>");
+
+		let str = "Hello World!";
+		document.write(str.length+"<br>"); // 12
+		document.write(str.toUpperCase()+"<br>"); // HELLO WORLD!
+		document.write(str.toLowerCase()+"<br>"); // hello world!
+		document.write(str.charAt(0)+"<br>"); // H
+		document.write(str.indexOf("o")+"<br>"+"<br/>"); // 4
+
+		// Math object
+        document.write("Math object"+"<br/>");
+
+		document.write(Math.PI+"<br>"); // 3.141592653589793
+		document.write(Math.round(4.7)+"<br>"); // 5
+		document.write(Math.floor(4.7)+"<br>"); // 4
+		document.write(Math.ceil(4.2)+"<br>"); // 5
+		document.write(Math.random()+"<br>"+"<br/>"); // a random number between 0 and 1
+
+		// Date object
+        document.write("Date object"+"<br/>");
+        
+		let date = new Date();
+		document.write(date.getDate()+"<br>"); // current day of the month
+		document.write(date.getMonth()+"<br>"); // current month (0-11)
+		document.write(date.getFullYear()+"<br>"); // current year (4 digits)
+		document.write(date.getTime()+"<br>"); // number of milliseconds since January 1, 1970
+		date.setDate((15)); // set the day of the month to 15
+		document.write(date.getDate()+"<br>"+"<br/>"); // 15
+
+		// Boolean object
+        document.write("Boolean object"+"<br/>");
+
+		let bool = true;
+		document.write(bool.valueOf()+"<br>"); // true
+		document.write(bool.toString()+"<br>"+"<br/>"); // "true"
+
+		// Number object
+        document.write("Number object"+"<br/>");
+
+		let num = 123.456;
+		document.write(Number.MAX_VALUE+"<br>"); // largest possible number in JavaScript
+		document.write(Number.MIN_VALUE+"<br>"); // smallest possible number in JavaScript
+		document.write(num.toExponential(2)+"<br>"); // "1.23e+2"
+		document.write(num.toFixed(2)+"<br>"+"<br/>"); // "123.46"
+
+		// RegExp object
+        document.write("RegExp object"+"<br/>");
+
+		let regex = /hello/i;
+		document.write(regex.test("Hello World!")+"<br>"); // true
+		document.write(regex.exec("Hello World!")+"<br>"); // ["Hello", index: 0, input: "Hello World!", groups: undefined]
+		document.write(regex.source+"<br>"); // "hello"
+		document.write(regex.lastIndex+"<br>"); // 0
+	</script>
+</body>
+</html>
