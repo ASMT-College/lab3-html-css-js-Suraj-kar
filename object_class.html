@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //create direct instance of object
+       //var Ram={
+         //   name: "Ram",
+           // age: 20,
+            //address:"samakhushi"
+
+       // } 
+        //document.write("Name is " + Ram.name)
+
+        //create an object constructor
+        function person(n,a,ad) {
+            this.name = n;
+            this.age = a;
+            this.address =ad;
+            this.showDetails = showname;
+        }
+        
+
+        function showname() {
+            document.write("My name is " + this.name)
+        }
+
+        var ram=new person("ram",20,"ktm")
+        ram.showDetails();
+
+
+    </script>
+</body>
+</html>
+<!-- create class/objecct named circle with property radius and ethod to show its area   -->

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle</title>
+</head>
+<body>
+        <!-- create class/objecct named circle with property radius and method to show its area   -->
+    <script>
+        function area(){
+            document.write(Math.PI*this.radius*this.radius);
+        }
+        function circle(r){
+            this.radius = r;
+            this.showarea=area;
+        }
+        var mycircle=new circle(15);
+        mycircle.showarea();
+    </script>
+</body>
+</html>
