@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#mydiv').hide();
+            $('#mydiv').click(function(){
+                alert("Hi this event defined from jquery");
+            });
+            $('#mydiv').on("mouseenter", function(){
+                $("body").css("background-color", "blue");
+            });
+            $('#mydiv').on("mouseleave", function(){
+                $("body").css("background-color", "white");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="mydiv">Hello My Div</div>
+    <div onclick="$('#mydiv').show()">Show</div>
+    <div onclick="hidemydiv()">Hide</div>
+    <script>
+        function hidemydiv() {
+            $('#mydiv').hide();
+        }
+    </script>
+    
+</body>
+</html>
